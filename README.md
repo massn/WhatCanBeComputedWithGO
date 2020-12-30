@@ -5,6 +5,6 @@ Go programs of "What Can Be Computed?: A Practical Guide to the Theory of Comput
 ## Usage(WIP)
 For example,
 ```
-$ cd chap3
-$ go test
+$ cd chap2
+$ go test -v -race -cover
 ```

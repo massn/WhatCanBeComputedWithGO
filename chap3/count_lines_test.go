@@ -5,27 +5,18 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/suite"
 )
 
-type CountLinesTestSuite struct {
-	suite.Suite
-}
-
-func TestCountLinesTestSuite(t *testing.T) {
-	suite.Run(t, new(CountLinesTestSuite))
-}
-
-func (suite *CountLinesTestSuite) TestNormal() {
+func TestNormal(t *testing.T) {
 	length := countLines("hoge\nfuga\npoyo")
-	assert.Equal(suite.T(), "3", length)
+	assert.Equal(t, "3", length)
 }
 
-func (suite *CountLinesTestSuite) TestSelfReflection() {
+func TestSelfReflection(t *testing.T) {
 	bytes, err := ioutil.ReadFile("count_lines.go")
 	if err != nil {
 		panic(err)
 	}
 	length := countLines(string(bytes))
-	assert.Equal(suite.T(), "12", length)
+	assert.Equal(t, "12", length)
 }
