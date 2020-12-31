@@ -2,11 +2,10 @@
 Go programs of "What Can Be Computed?: A Practical Guide to the Theory of Computation(John Maccormick)"
 
 
-## Usage(WIP)
-For example,
+## Tests
+Computings in the textbook are implemented as tests.
 ```
-$ cd chap2
-$ go test -v -race -cover
+$ go test -v -race -cover ./...
 ```
 
 ## References
