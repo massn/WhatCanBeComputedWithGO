@@ -7,12 +7,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+var kString string = strings.Repeat("0123456789", 100)
+
 func Test1k(t *testing.T) {
-	result := longerThan1k(strings.Repeat("0123456789", 100))
-	assert.Equal(t, "yes", result)
+	result := longerThan1k(kString)
+	assert.Equal(t, "no", result)
 }
 
-func Test999(t *testing.T) {
-	result := longerThan1k(strings.Repeat("123456789", 111))
-	assert.Equal(t, "no", result)
+func Test1k1(t *testing.T) {
+	result := longerThan1k(kString + ".")
+	assert.Equal(t, "yes", result)
 }
