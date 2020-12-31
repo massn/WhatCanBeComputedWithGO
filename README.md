@@ -1,3 +1,4 @@
+![Go](https://github.com/massn/WhatCanBeComputedWithGo/workflows/Go/badge.svg?branch=main)
 # WhatCanBeComputedWithGo
 Go programs of ["What Can Be Computed?: A Practical Guide to the Theory of Computation(John Maccormick)"](https://press.princeton.edu/books/hardcover/9780691170664/what-can-be-computeda).　　
 
