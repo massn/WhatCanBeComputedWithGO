@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func countaintsGAGA(s string) string {
+func ContainsGAGA(s string) string {
 	if strings.Contains(s, "GAGA") {
 		return "yes"
 	}

@@ -7,12 +7,12 @@ import (
 )
 
 func TestYes(t *testing.T) {
-	result := countaintsGAGA("CTGAGAC")
+	result := ContainsGAGA("CTGAGAC")
 	assert.Equal(t, "yes", result)
 }
 
 func TestNo(t *testing.T) {
-	result := countaintsGAGA("CTGA")
+	result := ContainsGAGA("CTGA")
 	assert.Equal(t, "no", result)
 }
 
@@ -21,6 +21,6 @@ func TestFile(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	result := countaintsGAGA(string(bytes))
+	result := ContainsGAGA(string(bytes))
 	assert.Equal(t, "yes", result)
 }
